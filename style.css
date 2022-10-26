@@ -8,7 +8,36 @@
 body{
     background-color: #faebd7;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin:0;
+    top:50%;
+    transform:translateY(-50%);
+    transform:translateX(500%);
+    padding: 0;
+    position: absolute;
+   
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin:0;
+    top:65%;
+    transform:translateY(-100%);
+    transform:translateX(100%);
+    padding: 0;
+    position: absolute;
+}
+#Title{
+    font-size: 100px;
+    font-family: 'Anton', sans-serif;
+}
+#Paragraph{
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
 }
 
 .slide{
@@ -23,8 +52,20 @@ body{
     font-size: 64px;
     list-style-type: none;  
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    
 
+}
+.icons ul li{
+    position: sticky;
+    float: right;
+    color: #556b2f;
+    scale: 260%;
+    box-sizing: border-box;
+    padding: 40px;
+    padding-top:70px;
+    display: inline-block;
+    justify-content: space-between;
+   
 }
 ul {  
     list-style-type: none;  
@@ -96,16 +137,24 @@ input:not(:checked) ~ .slide{
     overflow:show;
     height: 100vh;
     width: 100vw;
+    z-index: -1;
+    position: absolute;
+    float:left;
 }
+
 .shaped{
     float:left;
     height:100vh;
     width:60vw;
-    float:left;
-    background: black url(coffeebeans.mp4) center top no-repeat;
-    background-size:cover;
+    background: black url(beans.mp4) center top no-repeat;
+    background: 200vh;
     shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
     shape-margin: 20px;
-    clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
-    image-rendering: auto;
+    clip-path: polygon(0 0, 80% 0, 50% 100%, 0% 100%);
+    image-rendering: optimizeQuality;
+    z-index: -1;
+    position: absolute;
+    
 }
+
+
